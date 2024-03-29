@@ -1,0 +1,20 @@
+:root {
+	--bg-sign: #010712;
+	--bg-rubine: #9c1f55;
+	--almost-black: #000715;
+	--white: #fff;
+	--rubine-red: #ce0058;
+	--blue-linear: #003da5;
+	--bg-hightlight: rgba(0, 61, 165, 0.2);
+	--black-bg: rgba(0, 11, 32, 0.2);
+	--dark-blue: #00205b;
+	--dark-rubine-red: #66002c;
+	--white-70: #b2b2b2;
+	--blue: #003da5;
+	--text-rubine-red-light: #aa7f91;
+    --font-family: "Exo 2", sans-serif;
+}
+
+/* border-radius: 5px;
+backdrop-filter: blur(10px);
+box-shadow: 20px 20px 100px 0 rgba(0, 61, 165, 0.3); */
