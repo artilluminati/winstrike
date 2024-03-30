@@ -1,4 +1,6 @@
 :root {
+	--col: calc(100vw / 12);
+
 	--bg-sign: #010712;
 	--bg-rubine: #9c1f55;
 	--almost-black: #000715;
@@ -15,6 +17,100 @@
     --font-family: "Exo 2", sans-serif;
 }
 
+*{
+	margin:0;
+	padding:0;
+	font-family: var(--font-family);
+}
+
 /* border-radius: 5px;
 backdrop-filter: blur(10px);
 box-shadow: 20px 20px 100px 0 rgba(0, 61, 165, 0.3); */
+
+/* Базовые стили */
+
+img{
+	max-width: 100%;
+}
+
+a{
+	text-decoration: none;
+}
+
+/* Заголовки */
+
+.heading{
+	font-size: 2rem;
+	color: var(--white);
+}
+
+/* Цвета */
+
+.white{
+	color: var(--white);
+}
+
+.white-70{
+	color: var(--white-70);
+}
+
+.rubine-red{
+	color: var(--rubine-red);
+}
+
+/* Кнопки */
+
+.btn-main{
+	border-radius: 5px;
+	fill: var(--bg-hightlight);
+	stroke-width: 2px;
+	stroke: var(--dark-blue);
+	backdrop-filter: blur(10px);
+	box-shadow: 20px 20px 100px 0 rgba(0, 61, 165, 0.3);
+}
+
+.btn-main:hover{
+	border-radius: 5px;
+	fill: var(--bg-hightlight);
+	stroke-width: 2px;
+	stroke: var(--dark-blue);
+	backdrop-filter: blur(10px);
+	box-shadow: 20px 20px 100px 0 rgba(0, 61, 165, 0.3);
+}
+
+
+/* Хедер */
+
+header{
+	background: linear-gradient(129deg, rgba(0, 61, 165, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%) #000;
+	height: 100vh;
+}
+header .container{
+	padding-inline: calc(2 * var(--col));
+}
+.nav-menu a{
+	color: var(--white);
+}
+
+header nav{
+	padding-left: calc(2 * var(--col));
+	backdrop-filter: blur(10px);
+	background: var(--black-bg);
+}
+
+
+/* Выпадающее меню */
+
+.info-menu{
+	display: flex;
+}
+.info-menu a, .info-menu span{
+	color: var(--white);
+}
+
+.info-menu-hidden{
+	display: none;
+}
+.info-menu-hide{
+	display: none;
+}
