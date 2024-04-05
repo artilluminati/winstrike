@@ -190,8 +190,13 @@ header .wrapper .content div:last-child {
 	justify-content: space-between;
 }
 
+.nav-menu-list{
+	display: flex;
+	gap: 15px;
+}
 .nav-menu-list a {
 	color: var(--white);
+	font-size: 1.5rem;
 }
 
 .nav-menu-list a:hover {
@@ -536,6 +541,7 @@ header .wrapper .content div:last-child {
 .section-faq{
 	padding-block: 90px;
 	height: 100%;
+	background: var(--dark-blue-bg);
 	overflow-y: hidden;
 }
 .questions-wrapper{
@@ -574,7 +580,7 @@ header .wrapper .content div:last-child {
 	margin-left: 110px;
 }
 
-Акции и события
+/* Акции и события */
 .section-events{
 	padding-block: 90px;
 	height: 100%;
@@ -646,4 +652,23 @@ header .wrapper .content div:last-child {
 }
 .selected .event-title{
 	color: var(--white);
+}
+
+footer{
+	padding-bottom: 90px;
+	background: var(--almost-black);
+}
+.footer-menu{
+	background: var(--dark-blue-bg);
+	padding-block: 20px;
+}
+.footer-contacts{
+	background: none;
+}
+.footer-info-section{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	gap: 30px;
+	row-gap: 15px;
 }
