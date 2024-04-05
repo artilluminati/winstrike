@@ -17,19 +17,16 @@
         <!-- Хедер -->
         <header>
 
-            <div class="content">
-                <nav>
+            <div class="wrapper">
+                <nav class="nav-menu">
 
                     <!-- Выпадающее меню -->
                     <div class="info-menu">
+                        <div class="info-menu-show">
+                            <svg height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="#ffffff" d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg>
+                        </div>
                         <div class="info-menu-text">
                             <span>Казань, Петербургская, 9</span>
-                        </div>
-                        <div class="info-menu-show">
-                            <img src="assets/img/icons/arrow-down-white.svg" alt="">
-                        </div>
-                        <div class="info-menu-hide">
-                            <img src="assets/img/icons/arrow-down-white.svg" alt="">
                         </div>
                     </div>
                     <div class="info-menu-hidden">
@@ -64,7 +61,7 @@
                     </div>
 
                     <!-- Меню -->
-                    <div class="nav-menu">
+                    <div class="nav-menu-list">
                         <a href="/">Главная</a>
                         <a href="/index.html#specifications">Железо</a>
                         <a href="/index.html#price">Прайс</a>
@@ -73,27 +70,30 @@
                         <a href="/index.html#faq">FAQ</a>
                     </div>
                 </nav>
-                <div class="container">
-                    <div>
-                        <div>
-                            <a class="logo-full" href="/">
-                                <span class="logo-caption">Киберспортивный клуб</span>
-                                <img class="logo-img">
-                            </a>
-                            <p class="logo-slogan">
-                                Погрузись в мир киберспорта вместе с Winstrike
-                            </p>
-                            <a href="/" class="btn-main">Забронировать</a>
+                <div class="container"> 
+                    <div class="header-content">
+                        <div class="content">
+                            <div>
+                                <a class="logo-full" href="/">
+                                    <span class="logo-caption">Киберспортивный клуб</span>
+                                    <img class="logo-img" src="assets/img/logo.svg">
+                                </a>
+                                <p class="logo-slogan heading white">
+                                    Погрузись в мир киберспорта вместе с Winstrike
+                                </p>
+                                <a href="/" class="btn-main"><span>Забронировать</span></a>
+                            </div>
+                            <div class="header-img">
+                                
+                            </div>
                         </div>
-                        <div>
-                            <img src="" class="header-img" alt="">
+                        <div class="header-mini-gallery">
+                            <img src="assets/img/main-page/header/Union.png" alt="">
+                            <img src="assets/img/main-page/header/Union1.png" alt="">
+                            <img src="assets/img/main-page/header/Union2.png" alt="">
                         </div>
                     </div>
-                    <div class="header-mini-gallery">
-                        <img src="assets/img/main-page/header1.png" alt="">
-                        <img src="assets/img/main-page/header2.png" alt="">
-                        <img src="assets/img/main-page/header3.png" alt="">
-                    </div>
+                    
                 </div>
             </div>
             <div class="background">
@@ -102,34 +102,42 @@
         </header>
 
         <!-- Прайс и железо -->
-        <section>
             <div class="container price-container">
-                <div class="price-chars-container">
+                <section class="price-chars-container">
                     <div class="price-images">
-                        <div class="img-substrate">
-                            <img src="assets/img/main-page/price/Subtract.png" alt="">
+                        <div class="img-bgs">
+                            <div class="price-img-bg"></div>
+                            <div class="price-img-bg"></div>
+                            <div class="price-img-bg"></div>
+                            <div class="price-img-bg"></div>
                         </div>
-                        <div class="img-substrate">
-                            <img src="assets/img/main-page/price/Subtract(1).png" alt="">
+                        <div class="img-substrates">
+                            <div class="img-substrate">
+                                <img src="assets/img/main-page/price/Subtract.png" alt="">
+                            </div>
+                            <div class="img-substrate">
+                                <img src="assets/img/main-page/price/Subtract (1).png" alt="">
+                            </div>
+                            <div class="img-substrate">
+                                <img src="assets/img/main-page/price/ps5-digital 1.png" alt="">
+                            </div>
+                            <div class="img-substrate">
+                                <img src="assets/img/main-page/price/ps5-digital 2.png" alt="">
+                            </div>
                         </div>
-                        <div class="img-substrate">
-                            <img src="assets/img/main-page/price/ps5-digital 1.png" alt="">
-                        </div>
-                        <div class="img-substrate">
-                            <img src="assets/img/main-page/price/ps5-digital 2.png" alt="">
-                        </div>
+                        
                     </div>
                     <div class="price-title">
-                        <div>Standart</div>
-                        <div>VIP</div>
-                        <div>PS 4 Lounge</div>
-                        <div>PS 5 Lounge</div>
+                        <div class="heading">Standart</div>
+                        <div class="heading">VIP</div>
+                        <div class="heading">PS 4 Lounge</div>
+                        <div class="heading">PS 5 Lounge</div>
                     </div>
                     <div class="price-seats">
-                        <div>50 мест</div>
-                        <div>20 мест</div>
-                        <div>5 мест</div>
-                        <div>2 места</div>
+                        <div class="mini-heading white-70">50 мест</div>
+                        <div class="mini-heading white-70">20 мест</div>
+                        <div class="mini-heading white-70">5 мест</div>
+                        <div class="mini-heading white-70">2 места</div>
                     </div>
                     <div class="price-characteristics">
                         <div>
@@ -137,7 +145,7 @@
                                 <div class="chars-shown">
                                     <div class="char">
                                         <div class="char-icon">
-                                            <img src="assets/img/main-page/gpu-icon.svg" alt="">
+                                            <img src="assets\img\icons\characteristics\gpu-gtx.svg" alt="">
                                         </div>
                                         <div class="char-title">
                                             Geforce GTX 1060
@@ -145,18 +153,26 @@
                                     </div>
                                     <div class="char">
                                         <div class="char-icon">
-                                            <img src="assets/img/main-page/gpu-icon.svg" alt="">
+                                            <img src="assets\img\icons\characteristics\cpu-corei5.svg" alt="">
                                         </div>
                                         <div class="char-title">
-                                            Geforce GTX 1060
+                                            Intel Core i5 - 8400
                                         </div>
                                     </div>
                                     <div class="char">
                                         <div class="char-icon">
-                                            <img src="assets/img/main-page/gpu-icon.svg" alt="">
+                                            <img src="assets\img\icons\characteristics\ram.svg" alt="">
                                         </div>
                                         <div class="char-title">
-                                            Geforce GTX 1060
+                                            16GB DDR4
+                                        </div>
+                                    </div>
+                                    <div class="char">
+                                        <div class="char-icon">
+                                            <img src="assets\img\icons\characteristics\keyboard.svg" alt="">
+                                        </div>
+                                        <div class="char-title">
+                                            Daksa RU
                                         </div>
                                     </div>
                                 </div>
@@ -168,7 +184,7 @@
                                     </div>
                                     <div class="char">
                                         <div class="char-title">
-                                            Мышь - Logitech G102 Prodigy
+                                            Ковер - mObility 900x400
                                         </div>
                                     </div>
                                 </div>
@@ -177,14 +193,73 @@
                                         Развернуть
                                     </div>
                                     <div class="char-btn-icon">
-        
+                                        <img src="assets\img\icons\arrow-down.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="chars">
+                                <div class="chars-shown">
+                                    <div class="char">
+                                        <div class="char-icon">
+                                            <img src="assets\img\icons\characteristics\gpu-rtx.svg" alt="">
+                                        </div>
+                                        <div class="char-title">
+                                            Geforce RTX 2070
+                                        </div>
+                                    </div>
+                                    <div class="char">
+                                        <div class="char-icon">
+                                            <img src="assets\img\icons\characteristics\cpu-corei5.svg" alt="">
+                                        </div>
+                                        <div class="char-title">
+                                            Intel Core i5 - 8400
+                                        </div>
+                                    </div>
+                                    <div class="char">
+                                        <div class="char-icon">
+                                            <img src="assets\img\icons\characteristics\ram.svg" alt="">
+                                        </div>
+                                        <div class="char-title">
+                                            16GB DDR4
+                                        </div>
+                                    </div>
+                                    <div class="char">
+                                        <div class="char-icon">
+                                            <img src="assets\img\icons\characteristics\keyboard.svg" alt="">
+                                        </div>
+                                        <div class="char-title">
+                                            Hexgears GK12 
+(механика)
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chars-hidden">
+                                    <div class="char">
+                                        <div class="char-title">
+                                            Мышь - Logitech G102 Prodigy
+                                        </div>
+                                    </div>
+                                    <div class="char">
+                                        <div class="char-title">
+                                            Ковер - mObility 900x400
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chars-btn">
+                                    <div class="char-btn-text">
+                                        Развернуть
+                                    </div>
+                                    <div class="char-btn-icon">
+                                        <img src="assets\img\icons\arrow-down.svg" alt="">
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="price-values-container">
+                </section>
+                <section class="price-values-container">
                     <div class="heading rubine-red">Прайс</div>
                     <div class="price-table">
                         <div class="t-row">
@@ -246,7 +321,7 @@
                     <div>
                         <a href="/" class="btn-main">Забронировать</a>
                     </div>
-                </div>
+                </section>
                 
             </div>
         </section>
@@ -259,7 +334,7 @@
                 <div class="gallery-images-wrapper">
                     <div class="gallery-images">
                         <div class="gallery-image">
-                            <img src="" alt="">
+                            <img src="assets/img/main-page/gallery/Rectangle 7.png" alt="">
                         </div>
                     </div>
                     <div class="gallery-indicator">
@@ -281,9 +356,8 @@
             <div class="heading rubine-red">Контакты</div>
             <div class="contacts-grid">
                 <div>
-                    <p>Чтобы забронировать или задать вопрос свяжитесь с нами</p>
+                    <p class="text">Чтобы забронировать или задать вопрос свяжитесь с нами</p>
                     <div class="contacts-list">
-                        <div>
                             <div class="contacts-list-item-icon">
                                 <img class="icon" src="assets/img/icons/tel-icon.svg" alt="">
                                 <a href="tel:+7 (908) 334-90-70">+7 (908) 334-90-70</a>
@@ -309,12 +383,12 @@
                                 <a href="tel:+7 (908) 334-90-70">+7 (908) 334-90-70</a>
                             </div>
                         </div>
-                    </div>
                 </div>
                 <div class="contacts-map">
-                    <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/winstrike_tavern/47999022676/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Winstrike Tavern</a><a href="https://yandex.ru/maps/43/kazan/category/computer_club/97550856506/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Компьютерный клуб в Казани</a><a href="https://yandex.ru/maps/43/kazan/category/cybersport/119373172320/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Киберспорт в Казани</a><iframe src="https://yandex.ru/map-widget/v1/?ll=49.126723%2C55.785635&mode=search&oid=47999022676&ol=biz&z=14.34" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                    <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/winstrike_tavern/47999022676/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Winstrike Tavern</a><a href="https://yandex.ru/maps/43/kazan/category/computer_club/97550856506/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Компьютерный клуб в Казани</a><a href="https://yandex.ru/maps/43/kazan/category/cybersport/119373172320/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Киберспорт в Казани</a><iframe src="https://yandex.ru/map-widget/v1/?ll=49.126723%2C55.785635&mode=search&oid=47999022676&ol=biz&z=14.34" width="100%" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe></div>
                 </div>
             </div>
+            <div class="background"></div>
         </section>
 
 
@@ -366,7 +440,7 @@
         <a name="faq"></a>
         <section class="section-faq">
             <div class="heading rubine-red">Часто задаваемые вопросы</div>
-            <div class="">
+            <div class="questions-wrapper">
                 <div class="question-wrapper">
                     <div class="question-title">
                         <button class="accordion-btn">
@@ -429,7 +503,7 @@
                     </div>
                 </div>
                 <div class="events-menu">
-                    <div class="event-button">
+                    <div class="event-button selected">
                         <div class="event-type-icon">
                             <img src="assets/img/icons/events/promo-icon.svg" alt="">
                         </div>
