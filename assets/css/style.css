@@ -50,6 +50,17 @@ section>.heading{
 	text-align: center;
 }
 
+/* Анимации */
+.chars-hidden {
+	height: 0;
+	overflow: hidden;
+	transition: height 0.5s ease-in-out;
+}
+
+.chars-hidden.show {
+	height: 100%;
+}
+
 /* width */
 ::-webkit-scrollbar {
 	width: 10px;
@@ -457,36 +468,56 @@ header .wrapper .content div:last-child {
 	margin-top: 60px;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 	height: 100%;
 	width: 100%;
 }
 .gallery-images{
 	display: flex;
+	aspect-ratio: 16 / 9;
+	max-width: calc(8 * var(--col));
+	position: relative;
+	z-index: 1;
 }
 .gallery-image{
 	opacity: 0;
-	width: 0;
 	object-fit: cover;
+	display: none;
+}
+.gallery-image img{
+	width: 100%;
+	max-width: 100%;
+	max-height: 100%;
 }
 .gallery-image.show{
 	opacity: 1;
-	width: calc(100% );
+	width: calc(100%);
+	display: block;
 }
 .gallery-arrow-left, .gallery-arrow-right{
-	width: 116px;
+	width: 100px;
 	height: 40px;
 	background: var(--dark-blue);
 	cursor: pointer;
 	display: flex;
+	/* position: absolute; */
+}
+.gallery-btns-container{
+	position: absolute;
+	width: calc(8 * var(--col) + (2 * 95px));
+	height: fit-content;
+	display: flex;
+	justify-content: space-between;
 }
 .gallery-arrow-left{
 	border-radius: 5px 0 0 5px;
 	overflow: hidden;
+	right: 100px;
 }
 .gallery-arrow-right{
 	border-radius: 0 5px 5px 0;
 	overflow: hidden;
+	right: 0;
 }
 .gallery-arrow-left button, .gallery-arrow-right button{
 	width: 100%;
@@ -500,7 +531,25 @@ header .wrapper .content div:last-child {
 	border-radius: 5px;
 	overflow: hidden;
 }
-
+.gallery-indicator{
+	z-index: 10;
+	position: absolute;
+	width: calc(8 * var(--col));
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	/* top: -10px; */
+}
+.indicator-page{
+	width: 100px;
+	height: 5px;
+	background: var(--white-70);
+	border-radius: 10px;
+	transform: translateY(-20px);
+}
+.indicator-page.selected{
+	background: var(--bg-rubine);
+}
 /* Контакты */
 .section-contacts{
 	padding-block: 90px;
@@ -695,10 +744,10 @@ header .wrapper .content div:last-child {
 	display: flex;
 	justify-content: flex-end;
 }
-.selected{
+.event-button.selected{
 	border: 2px solid var(--blue-linear);
 }
-.selected .event-title{
+.event-button.selected .event-title{
 	color: var(--white);
 }
 

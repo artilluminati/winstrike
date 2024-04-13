@@ -191,7 +191,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="chars-btn">
+                                <div class="chars-btn" data-expand-char="0">
                                     <div class="char-btn-text">
                                         Развернуть
                                     </div>
@@ -251,7 +251,7 @@
                                     </div>
                                 </div>
                                 <div class="chars-btn">
-                                    <div class="char-btn-text">
+                                    <div class="char-btn-text" data-expand-char="1">
                                         Развернуть
                                     </div>
                                     <div class="char-btn-icon">
@@ -328,12 +328,11 @@
                 
             </div>
         </section>
+
+        <!-- Галерея -->
         <section class="section-gallery">
             <div class="heading rubine-red">Галерея</div>
             <div class="gallery">
-                <div class="gallery-arrow-left">
-                    <button onclick=""><img src="assets/img/icons/arrow-left.svg" alt=""></button>
-                </div>
                 <div class="gallery-images-wrapper">
                     <div class="gallery-images">
                         <div class="gallery-image show">
@@ -348,8 +347,13 @@
                         <div class="indicator-page"></div>
                     </div>
                 </div>
-                <div class="gallery-arrow-right">
-                    <button onclick=""><img src="assets/img/icons/arrow-left.svg" style="transform: rotate(180deg);" alt=""></button>
+                <div class="gallery-btns-container">
+                    <div class="gallery-arrow-left">
+                        <button onclick=""><img src="assets/img/icons/arrow-left.svg" alt=""></button>
+                    </div>
+                    <div class="gallery-arrow-right">
+                        <button onclick=""><img src="assets/img/icons/arrow-left.svg" style="transform: rotate(180deg);" alt=""></button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -662,5 +666,6 @@
     </div>
 
     <script src="assets/js/gallery.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
