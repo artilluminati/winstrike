@@ -57,6 +57,7 @@ section>.heading{
 	transition: height 0.5s ease-in-out;
 }
 
+
 .chars-hidden.show {
 	height: 100%;
 }
@@ -244,12 +245,6 @@ header .wrapper .content div:last-child {
 	color: var(--rubine-red);
 }
 
-.info-menu {
-	display: flex;
-	align-items: center;
-	gap: 24px;
-}
-
 
 /* Миниатюры */
 .header-mini-gallery {
@@ -301,6 +296,9 @@ header .wrapper .content div:last-child {
 
 .info-menu {
 	display: flex;
+	z-index: 20;
+	align-items: center;
+	gap: 24px;
 }
 
 .info-menu a,
@@ -310,12 +308,12 @@ header .wrapper .content div:last-child {
 
 .info-menu-hidden {
 	display: none;
+	position: absolute;
+	top: -100vh;
+	width: 100vw;
+	height: 100vh;
+	z-index: 10;
 }
-
-.info-menu-hide {
-	display: none;
-}
-
 
 /* Прайс */
 .price-container{
