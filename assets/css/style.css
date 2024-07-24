@@ -52,14 +52,13 @@ section>.heading{
 
 /* Анимации */
 .chars-hidden {
-	height: 0;
-	overflow: hidden;
-	transition: height 0.5s ease-in-out;
-}
-
-
-.chars-hidden.show {
 	height: 100%;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.05s ease-in-out;
+}
+.chars-hidden.show{
+	max-height: 100%;
 }
 
 /* width */
@@ -67,21 +66,21 @@ section>.heading{
 	width: 10px;
   }
   
-  /* Track */
-  ::-webkit-scrollbar-track {
-	background: var(--almost-black);
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-	background: var(--dark-rubine-red);
-	border-radius: 2px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-	background: var(--bg-rubine);
-  }
+/* Track */
+::-webkit-scrollbar-track {
+background: var(--almost-black);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: var(--dark-rubine-red);
+border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: var(--bg-rubine);
+}
 
 /* Заголовки */
 
@@ -421,6 +420,8 @@ header .wrapper .content div:last-child {
 	align-items: center;
 	gap: 10px;
 	color: var(--rubine-red);
+	cursor: pointer;
+	user-select: none;
 }
 
 
@@ -661,6 +662,19 @@ header .wrapper .content div:last-child {
 	display: flex;
 	align-items: center;
 	gap: 40px;
+	cursor: pointer;
+	transition: color 0.1s ease-in-out;
+	user-select: none;
+}
+.question-title:hover .heading{
+	color: var(--text-rubine-red-light);
+	transition: color 0.1s ease-in-out;
+}
+.accordion-elem{
+	display: none;
+}
+.accordion-elem.show{
+	display: block;
 }
 .accordion-btn{
 	width: 30px;
@@ -670,6 +684,14 @@ header .wrapper .content div:last-child {
 	background: transparent;
 	border: none;
 	margin-left: 30px;
+}
+.accordion-btn img{
+	transform: rotate(0);
+	transition: transform 0.3s;
+}
+.accordion-btn.show img{
+	transform: rotate(180deg);
+	transition: transform 0.3s;
 }
 .question-body{
 	margin-left: 110px;

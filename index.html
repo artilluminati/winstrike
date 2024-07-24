@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Winstrike Tavern</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -197,7 +197,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="chars-btn" data-expand-char="0">
+                                <div class="chars-btn" onclick="ExpandChars(0)">
                                     <div class="char-btn-text">
                                         Развернуть
                                     </div>
@@ -256,8 +256,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="chars-btn">
-                                    <div class="char-btn-text" data-expand-char="1">
+                                <div class="chars-btn" onclick="ExpandChars(1)">
+                                    <div class="char-btn-text">
                                         Развернуть
                                     </div>
                                     <div class="char-btn-icon">
@@ -456,7 +456,7 @@
             <div class="heading rubine-red">Часто задаваемые вопросы</div>
             <div class="questions-wrapper">
                 <div class="question-wrapper">
-                    <div class="question-title">
+                    <div class="question-title" onclick="ExpandAccordion(0)">
                         <button class="accordion-btn">
                             <img src="assets/img/icons/arrow-down-white.svg" alt="">
                         </button>
@@ -464,12 +464,12 @@
                             Очень интересный вопрос
                         </span>
                     </div>
-                    <div class="question-body">
+                    <div class="question-body accordion-elem">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus.</p>
                     </div>
                 </div>
                 <div class="question-wrapper">
-                    <div class="question-title">
+                    <div class="question-title" onclick="ExpandAccordion(1)">
                         <button class="accordion-btn">
                             <img src="assets/img/icons/arrow-down-white.svg" alt="">
                         </button>
@@ -477,12 +477,12 @@
                             Очень интересный вопрос
                         </span>
                     </div>
-                    <div class="question-body">
+                    <div class="question-body accordion-elem">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus.</p>
                     </div>
                 </div>
                 <div class="question-wrapper">
-                    <div class="question-title">
+                    <div class="question-title" onclick="ExpandAccordion(2)">
                         <button class="accordion-btn">
                             <img src="assets/img/icons/arrow-down-white.svg" alt="">
                         </button>
@@ -490,7 +490,7 @@
                             Очень интересный вопрос
                         </span>
                     </div>
-                    <div class="question-body">
+                    <div class="question-body accordion-elem">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus.</p>
                     </div>
                 </div>
